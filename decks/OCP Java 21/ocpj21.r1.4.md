@@ -26,7 +26,7 @@ Choose all that apply.
 `1980_s`
 
 ## G
-The `_Q2_`
+`_Q2_`
 
 # answer
 ## B
