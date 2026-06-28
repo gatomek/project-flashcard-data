@@ -4,6 +4,7 @@ uuid:
 ---
 
 # query
+**R1.06.**
 Assuming the following class compiles, how many variables defined in the class or method are in scope on the line marked on line 14?
 
 ```

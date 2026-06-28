@@ -4,8 +4,9 @@ uuid: 86bc22b8-fb29-4eaf-b3b0-f86e19ca13c2
 ---
 
 # query
-Which answer options represent the order in which the following statements can be assembled into a program that will compile successfully?
-Choose all that apply:
+**R1.02.**
+Which answer options represent the order in which the following statements can be assembled into a program that will compile successfully?  
+Choose all that apply.
 ```
 X: class Rabbit {}
 Y: import java.utils.*;
