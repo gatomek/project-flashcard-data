@@ -1,67 +1,46 @@
-import {lstatSync, rmSync, opendirSync, writeFileSync} from "node:fs";
+import {lstatSync, opendirSync, rmSync, writeFileSync} from "node:fs";
 import {copySync} from "fs-extra/esm";
 import path from "node:path";
 
-rmSync("./dist", { recursive: true, force: true });
-copySync("./decks", "./dist");
+async function scanFolder(p) {
+    const content = []
 
-const folders = [];
-const decks = opendirSync("./dist");
-for await (const deck of decks) {
+    const items = opendirSync(p);
+    for await (const item of items) {
+        const subPath = path.join(p, item.name);
 
-    const deckPath = path.join("./dist", deck.name);
-    const deckStat = lstatSync(deckPath);
-    if (!deckStat.isDirectory()) {
-        continue;
-    }
-
-    const flashcards = opendirSync(deckPath);
-    const fcs = [];
-    for await (const fc of flashcards) {
-        const flashcardPath = path.join(deckPath, fc.name)
-
-        const stat = lstatSync(flashcardPath);
+        const stat = lstatSync(subPath);
         const isDirectory = stat.isDirectory();
         if (isDirectory) {
-            const content = opendirSync(flashcardPath);
-            const contentFiles = [];
-            for await (const c of content) {
-                contentFiles.push({
-                    type: 'file',
-                    name: c.name
-                })
-            }
-            fcs.push({
+            content.push({
                     type: 'dir',
-                    name: fc.name,
-                    content: contentFiles
+                    name: item.name,
+                    content: await scanFolder(subPath)
                 }
             );
         } else {
-            fcs.push({
+            content.push({
                     type: 'file',
-                    name: fc.name
+                    name: item.name
                 }
             );
         }
     }
 
-    folders.push({
-            type: 'dir',
-            name: deck.name,
-            flashcards: fcs
-        }
-    );
+    return content;
 }
 
-const deckFile = {
-    decks: folders
+async function prepareResourceForGitHubPages(rootFolder) {
+    try {
+        rmSync(rootFolder, {recursive: true, force: true});
+        copySync("./decks", rootFolder);
+        const folders = await scanFolder(rootFolder);
+        writeFileSync(path.join(rootFolder, "manifest.json"), JSON.stringify(folders, null, 2), 'utf8');
+
+        console.log('OK');
+    } catch (err) {
+        console.error('Error', err);
+    }
 }
 
-const jsonData = JSON.stringify(deckFile, null, 2);
-try {
-    writeFileSync("dist/manifest.json", jsonData, 'utf8');
-    console.log('Data written to file');
-} catch (err) {
-    console.error('Error writing to file', err);
-}
+await prepareResourceForGitHubPages("./dist");
