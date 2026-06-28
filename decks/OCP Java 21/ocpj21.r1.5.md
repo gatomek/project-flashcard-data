@@ -4,7 +4,8 @@ uuid:
 ---
 
 # query
-Which statements about the following program are correct?
+**R1.05.**
+Which statements about the following program are correct?  
 Choose all that apply.
 
 ```

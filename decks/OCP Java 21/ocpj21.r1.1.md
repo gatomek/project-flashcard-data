@@ -4,8 +4,9 @@ uuid: 4e51721d-da14-4674-a59d-9ec9a9e114a9
 ---
 
 # query
-Which of the following are legal entry point methods that can be run from command line ?
-Choose all that apply:  
+**R1.01.**
+Which of the following are legal entry point methods that can be run from command line?  
+Choose all that apply.
 
 ## A
 `private static void main(String[] args)`
