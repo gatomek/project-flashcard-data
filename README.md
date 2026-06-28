@@ -11,3 +11,6 @@ https://www.uuidgenerator.net/
 
 ## Links
 https://www.merriam-webster.com/
+
+## Temp
+- https://gatomek.github.io/project-flashcard-data/Angielski/bitwise.md
