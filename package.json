@@ -1,10 +1,10 @@
 {
-  "name": "project-flashcard-data",
+  "name": "project-flashcards-data",
   "version": "1.0.0",
-  "description": "https://github.com/gatomek/project-flashcard-data",
+  "description": "https://github.com/gatomek/project-flashcards-data",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatomek/project-flashcard-data.git"
+    "url": "git+https://github.com/gatomek/project-flashcards-data.git"
   },
   "license": "MIT",
   "author": "gatomek",
