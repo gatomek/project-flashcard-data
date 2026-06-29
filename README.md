@@ -1,10 +1,10 @@
 # Flashcard Data
 
 ## GitHub Repo
-https://github.com/gatomek/project-flashcard-data
+https://github.com/gatomek/project-flashcards-data
 
 ## GitHub Pages manifest
-https://gatomek.github.io/project-flashcard-data/manifest.json
+https://gatomek.github.io/project-flashcards-data/manifest.json
 
 ## Flashcards App
 https://gatomek.github.io/project-flashcards-frontend/
