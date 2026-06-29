@@ -1,16 +1,14 @@
-import {lstatSync, opendirSync, rmSync, writeFileSync} from "node:fs";
+import {opendirSync, rmSync, writeFileSync} from "node:fs";
 import {copySync} from "fs-extra/esm";
 import path from "node:path";
 
 async function scanFolder(p) {
     const content = []
 
-    const items = opendirSync(p);
-    for await (const item of items) {
+    const dir = opendirSync(p);
+    for await (const item of dir) {
         const subPath = path.join(p, item.name);
-
-        const stat = lstatSync(subPath);
-        const isDirectory = stat.isDirectory();
+        const isDirectory = item.isDirectory();
         if (isDirectory) {
             content.push({
                     type: 'dir',
