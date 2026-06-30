@@ -14,7 +14,7 @@ W Java jest 8 typów prymitywnych:
 - boolean
 - byte
 - short
-- integer
+- int
 - long
 - float
 - double
