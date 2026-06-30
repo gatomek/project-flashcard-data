@@ -45,6 +45,6 @@ The code prints `2`.
 The code prints `3`.
 
 # answer
-##  A
-##  C
-##  D
+## A
+## C
+## D
