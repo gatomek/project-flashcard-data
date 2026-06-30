@@ -5,7 +5,7 @@ uuid: c6220471-4a02-4a06-b3e6-94495dad846c
 
 # query
 **R1.16.**
-What are true about this code?  
+Which are true about this code?    
 Choose all that apply.
 
 ```

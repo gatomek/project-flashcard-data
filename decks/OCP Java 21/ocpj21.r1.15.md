@@ -5,7 +5,7 @@ uuid: aaf6de6d-df88-4a40-a811-88f0f687d32a
 
 # query
 **R1.15.**
-Which of the following statements about garbage collector are correct?  
+Which of the following statements about garbage collection are correct?  
 Choose all that apply.
 
 ## A
@@ -15,7 +15,7 @@ Calling `System.gc()` is guaranteed to free up memory by destroying objects elig
 Garbage collection runs on a set schedule.
 
 ## C
-Garbate collection allows the JVM to reclaim memory for other objects. 
+Garbage collection allows the JVM to reclaim memory for other objects.
 
 ## D
 Garbage collection runs when your program has used up half the available memory.
