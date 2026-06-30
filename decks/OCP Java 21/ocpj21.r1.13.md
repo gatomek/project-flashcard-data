@@ -20,7 +20,7 @@ public class Water {
     boolean salty = true;
 }
 
-packate employee;
+package employee;
 INSERT IMPORTS HERE
 public class WaterFiller {
     Water water;
@@ -32,7 +32,7 @@ public class WaterFiller {
 import aquarium.*;
 ```
 
-## B 
+## B
 ```
 import aquarium.Water;
 import aquarium.jellies.*; 
