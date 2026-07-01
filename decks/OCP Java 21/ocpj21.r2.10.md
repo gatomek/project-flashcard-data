@@ -1,0 +1,43 @@
+---
+type: mcq
+uuid: 2583591d-b997-4d87-b630-0fd2a6031222
+---
+
+# query
+
+**R2.10.**
+Which is not an output of the following code snippet?
+
+```
+short height = 1, weight = 3;
+short zebra = (byte) weight * (byte) height;
+double ox = 1 + height * 2 + weight;
+long giraffe = 1 + 9 % height + 1;
+System.out.println(zebra);
+System.out.println(ox);
+System.out.println(giraffe);
+```
+
+## A
+
+`2`
+
+## B
+
+`3`
+
+## C
+
+`6`
+
+## D
+
+`6.0`
+
+## E
+
+The code does not compile.
+
+# answer
+
+## E

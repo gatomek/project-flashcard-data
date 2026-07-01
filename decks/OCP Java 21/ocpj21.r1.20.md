@@ -1,0 +1,66 @@
+---
+type: mcq
+uuid: 64185f2d-ecac-4242-ba77-8a1477aee1f6
+---
+
+# query
+
+**R1.20.**
+Which statement about the following class is correct?
+
+```
+1:  public class PoliceBox {
+2:      String color;
+3:      long age;
+4:      public void PoliceBox() {
+5:          color = "Blue";
+6:          age = 1200;
+7:      }
+8:      public static void main(String[] args) {
+9:          var p = new PoliceBox();
+10:         var q = new PoliceBox();
+11:         p.color = "green";
+12:         p.age = 1400;
+13:         p = q; 
+14:         System.out.println("Q1="+q.color);
+15:         System.out.println("Q2="+q.age);
+16:         System.out.println("P1="+p.color);
+17:         System.out.println("P2="+q.age);
+18: } }
+```
+
+## A
+
+It prints `Q1=blue`.
+
+## B
+
+It prints `Q2=1200`.
+
+## C
+
+It prints `P1=null`.
+
+## D
+
+It prints `P2=1400`.
+
+## E
+
+Line `4` does not compile.
+
+## F
+
+Line `12` does not compile.
+
+## G
+
+Line `13` does not compile.
+
+## H
+
+None of the above.
+
+# answer
+
+## C
