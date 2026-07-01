@@ -23,31 +23,41 @@ Choose all that apply.
 ```
 
 ## A
+
 Line `8` generates a compiler error.
 
 ## B
+
 Line `9` generates a compiler error.
 
 ## C
+
 `Empty = `
 
 ## D
+
 `Empty = false`
 
 ## E
+
 `Brand = `
 
 ## F
+
 `Brand = null`
 
 ## G
+
 `Code = 0.0`
 
 ## H
+
 `Code = 0f`
 
 # answer
 
 ## D
+
 ## F
+
 ## G
