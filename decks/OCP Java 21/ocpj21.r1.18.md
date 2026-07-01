@@ -35,7 +35,7 @@ The type of a `var` can not change at runtime.
 
 ## G
 
-The word `var` is a reserver word in Java.
+The word `var` is a reserved word in Java.
 
 # answer
 
