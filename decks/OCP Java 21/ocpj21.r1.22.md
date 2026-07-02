@@ -20,7 +20,7 @@ public class Price {
 
 ## A
 
-`int amount = 0b11;`
+`int Amount = 0b11;`
 
 ## B
 
